@@ -1,0 +1,31 @@
+{
+  "name": "passportjs",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/dinero-s/passportJS#readme",
+  "bugs": {
+    "url": "https://github.com/dinero-s/passportJS/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinero-s/passportJS.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.5.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
