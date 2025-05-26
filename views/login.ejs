@@ -88,18 +88,6 @@
         button:hover {
             background-color: #3367d6;
         }
-
-        .error {
-            color: #d32f2f;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
-
-        .success {
-            color: #34a853;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
         .logout-btn {
             margin-top: 1rem;
             display: inline-block;
@@ -147,13 +135,11 @@
 
 <script>
     function showForm(formType) {
-        // Переключение активных вкладок
         document.querySelectorAll('.tab').forEach(tab => {
             tab.classList.remove('active');
         });
         document.querySelector(`.tab:nth-child(${formType === 'login' ? 1 : 2})`).classList.add('active');
 
-        // Переключение активных форм
         document.getElementById('login-form').classList.remove('active');
         document.getElementById('register-form').classList.remove('active');
         document.getElementById(`${formType}-form`).classList.add('active');
